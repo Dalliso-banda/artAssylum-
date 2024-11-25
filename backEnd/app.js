@@ -12,8 +12,8 @@ app.use('/',pageRoutes);
 
 const db = mysql.createConnection({
     user: 'dfren',
-    password: 'ThisIsAPassword1234!!',
-    host:'143.198.214.159',
+    password: '',
+    host:'',
     database: 'frendo'
 })
 db.connect();
