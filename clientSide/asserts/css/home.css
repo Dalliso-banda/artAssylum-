@@ -1,0 +1,147 @@
+
+:root{
+    --primary: #fff;
+    --secondary: #f9f9e4;
+    --buttons: lightblue;
+}
+.intro{
+    
+    color: var(--primary);
+    background-image: url('/../asserts/backgroundImgs/homeBackground.jpg');
+    height: 40%;
+    display: flex; 
+    align-items: center; 
+    flex-direction: column;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid  #518bc295;
+    box-shadow: 1px 2x 1px #1826922f;
+    
+
+  
+    
+}
+.intro h1{
+   margin-top: 20%;
+   margin-left: -25%;
+   
+}
+.intro p{
+    color: var(--primary);
+    font-weight: 800;        
+}
+.intro button{
+    margin-left: 30%;
+    margin-top: 13%;
+    background: var(--buttons);
+    border: 1px solid var(--primary);
+    outline: none;
+    border-radius: 15px;
+    height: 15%;
+    width: 40%;
+    
+}
+.intro a{
+    text-decoration: none; 
+    color: var(--primary);        
+}
+
+h3{
+    margin: 4%;
+    }
+.dashBoard{
+    position: relative;
+    color: var(--primary);      
+    margin: 2%;
+}
+.bestCraft{
+    margin: 5%;
+    display: flex;
+    gap: 1.2em;
+}
+ 
+
+.bestCraft img{
+    width: 45%;
+    aspect-ratio: 16/7;
+}
+
+.description{
+    
+}
+.description h5{
+    color: var(--secondary);
+} 
+.description p{
+    font-size: 1em;
+}
+.selects{
+    position: relative;
+    display: flex;
+    overflow-x: scroll;
+    width: 90%;
+    flex-direction: row;
+    margin: 2%;
+    gap: 2em;
+    
+}
+.selects img{
+      width: 200px;
+      height: 200px;
+      border: 1px solid #fff;
+      box-shadow: 1px 2px 1px #fff;
+}
+.selects h2,p{
+    margin: 1%;
+}
+.dashBoard h1 a{
+   text-decoration: none;
+    color: #fff;
+    
+}
+ .dashBoard h1{
+    margin-left: 3%;
+    color: red;
+}
+@media only screen and (min-width:780px){
+    :root{
+        --primary: black;
+        --secondary: var(--primary);
+    }
+    .intro{
+        display: none;
+    }
+    
+    
+     .bestcraftsContainer{
+         display: flex;
+         margin-top: 10%;
+         color: red;
+     }
+     h1{
+         color: var(--primary);
+         margin-top: 40%;
+         text-align: center;
+     }
+      .bestCraft{
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.bestCraft img{
+    width: 80%;
+    height: 50%;
+}
+    .selects{
+        gap: 4em;
+    }
+     .dashBoard{
+         flex-wrap: wrap;
+        
+     }
+    
+    .dashboard .dashboardHeading{
+        display:none;
+    }
+}

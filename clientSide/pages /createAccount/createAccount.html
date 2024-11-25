@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Create Account</title>
+    <meta viewport 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../asserts/css/global.css">
+    <link rel="stylesheet" href="createAccount.css">
+</head>
+<body>
+    <back-btn></back-btn>
+    <div class="createAccount">
+        <h2>create Account</h2>
+        <form method="POST" 
+action='http://localhost:5000/createAccount'>
+            <label>
+                Username
+            </label>
+            <input type="text" id="username" placeholder='create your User Name' name="username">
+            <p id="userNameMsg"></p>
+            <label for="email">
+               email
+            </label>
+            <input type="email"  id="email" placeholder='enter your email' name="email">
+            <p id="emailMsg"></p>
+            <label for="pwd">
+                password 
+            </label>
+            <input type="password" id="pwd" placeholder='create password' name="pwd" required>
+            <p id="pwdMsg"></p>
+                        <label for="pwd">
+               confirm password 
+            </label>
+            <input type="password" id="confirmPwd" placeholder='confirm password'name="confirmPwd" required>
+            <p id="confirmPwdMsg"></p>
+            <button type='submit' id="sendBtn">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+<script src="/../components/backButton/back.js"></script>
+<script src="createAccount.js"></script>
+</html>

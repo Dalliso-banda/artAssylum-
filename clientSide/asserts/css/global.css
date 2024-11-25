@@ -1,0 +1,32 @@
+:root{
+    --globalColor: #fafafa;
+    --success: #2afe5764;
+}
+body {
+    height: 100vh;
+    margin: 0;
+    background: #000000;
+    font-style: oblique 2deg;
+    width: 100%;
+    color: var(--globalColor);
+}
+.navBg{
+    width: 100%;
+    aspect-ratio: 50/7;
+    position: fixed;
+    z-index: -1;
+}
+
+i{
+    font-size: 2em !important;
+    color: #ffffff;
+    margin-left: 3%;
+    margin-top:3%;
+}
+@media only screen and (min-width: 768px){
+    body{
+        background: white;
+        color: black;
+    }
+    
+}
