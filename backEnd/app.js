@@ -11,10 +11,11 @@ app.use(bp.urlencoded({extended:true}))
 app.use('/',pageRoutes);
 
 const db = mysql.createConnection({
-    user: 'dfren',
-    password: '',
-    host:'localhost',
-    database: 'frendo'
+    user: process.env.USER,
+    password: process.env.PASSWORD,
+    host: process.env.HOST,
+    database: process.env.DATABASE
+
 })
 db.connect();
 
